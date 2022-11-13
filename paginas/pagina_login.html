@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/base.css">
+        <link rel="stylesheet" href="../css/navBar.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" href="../css/perfil.css">k
+        <link rel="stylesheet" href="../css/rodape.css">
+        <title>Login</title>
+    </head>
+    <body class="container ">
+        <header>
+            <div class="mobile-menu">
+               <div class="line1"></div>
+               <div class="line2"></div>
+               <div class="line3"></div>
+            </div>
+            <nav>
+               <ul class="container nav-bar invisivel">
+                  <li><a class="menu__link" href="../index.html">Home</a></li>
+                  <li><a class="menu__link" href="pagina_filmes.html">Filmes</a></li>
+                  <li><a class="menu__link" href="pagina_series.html">Séries</a></li>
+                  <li><a class="menu__link menu--ativo" href="pagina_login.html">Login</a></li>
+               </ul>
+               <div>
+            </nav>
+         </header>
+
+        <main class="main-page">
+            <div class="conteiner-form">
+               <div class="escolher-login">
+                  <div class="faz-login login-escolhido">
+                     <h1>Já tenho conta</h1>
+                  </div>
+                  <div class="faz-cadastro">
+                     <h1>Cadastre-se agora!</h1>
+                  </div>
+               </div>
+
+                <div class="login-box display__escolhido">
+                   <form id="login">
+                       <label for="usuario">E-mail ou Nome de usuário</label>
+                       <input class="form__email" type="text" id="usuario" placeholder="Ex.: maddyvkun@mfortune.com " required>
+                       <label for="senha">Senha</label>
+                       <input class="form__senha" type="password" id="senha" placeholder="Sua senha" required>
+                       <button class="botao" >Login</button>
+                   </form>
+                </div>
+                <div class="cadastro-box display-none">
+                   <form id="cadastro">
+                       <label for="nome">Nome</label>
+                       <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+                       <label for="username">Nome de usuário</label>
+                       <input type="text" id="username" placeholder="Nome usado para fazer o login" required>
+                       <label for="email">E-mail</label>
+                       <input class="form__email" type="email" id="email" placeholder="Ex.: maddyvkun@mfortune.com" required>
+                       <label for="senha">Senha</label>
+                       <input class="form__senha" type="password" id="senha" placeholder="Sua senha" required>
+                       <label for="conf_senha">Confirme a senha</label>
+                       <input type="password" id="conf_senha" placeholder="Confirme sua senha" required>
+                       <button class="botao" >Cadastra-se agora!</button>
+                   </form>
+                </div>
+
+            </div>
+        </main>
+
+        <section class="perfil display-none">
+            <h1 class="perfil__titulo">PERFIL DE <p class="perfil__titulo--nome">...</p></h1>
+
+            <div class="perfil__usuario">
+               <img src="../imagens/perfil/icon_daenerys.webp" alt="foto do perfil">
+               <p class="perfil__usuario__nome">Nome Usuário</p>
+            </div>
+
+            <div class="perfil__placar">
+               <div class="perfil__pontos">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-people" viewBox="0 0 16 16">
+                     <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                   </svg>
+                  <h3 class="perfil__pontos__conteudo">13º</h3>
+                  <p>Seu ranking entre os usuário</p>
+               </div>
+               <div class="perfil__pontos">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-gift" viewBox="0 0 16 16">
+                     <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z"/>
+                   </svg>
+                  <h3 class="perfil__pontos__conteudo">13000</h3>
+                  <p>Pontos acumlados</p>
+               </div>
+               <div class="perfil__pontos">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                     <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                     <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                   </svg>
+                  <h3 class="perfil__pontos__conteudo">13</h3>
+                  <p>Avaliações feitas</p>
+               </div>
+            </div>
+
+            <div class="perfil__salvos">
+               <h2 class="perfil__salvos__titulo">Favoritados</h2>
+
+               <div class="perfil__salvos__conteudo">
+                  <div class="container__item">
+                     <img src="../imagens/home/umanoitedecrime.jpg" alt="">
+                     <p class="titulo-lancamentos">Uma Noite de Crime</p>
+                  </div>
+                  <div class="container__item">
+                     <img src="../imagens/filmes/lagoaazul.jpg" alt="Lagoa Azul">
+                     <p class="titulo-lancamentos">Lagoa Azul</p>
+                  </div>
+               </div>
+            </div>
+           
+        </section>
+
+        <footer class="rodape">
+            <section class="conteudo-rodape">
+               <div class="logo-rodape">
+                  <img src="" alt="" class="logo">
+               </div>
+   
+               <div class="inicio">
+                  <h3>inicio</h3>
+                  <nav>
+                     <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="pagina_filmes.html">Filmes</a></li>
+                        <li><a href="pagina_series.html">Séries</a></li>
+                        <li><a href="paginas/pagina_login.html">Login</a></li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="sobre-nos">
+                  <h3>Sobre-nós</h3>
+                  <nav>
+                     <ul>
+                        <li><a href="#">Empresa</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Blog</a></li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="redes-sociais">
+                  <div>
+                     <a href="#"><img src="../imagens/redes-sociais/facebook.png" alt=""></a>
+                     <a href="#"><img src="../imagens/redes-sociais/instagram.png" alt=""></a>
+                     <a href="#"><img src="../imagens/redes-sociais/github.png" alt=""></a>
+                     <a href="#"><img src="../imagens/redes-sociais/linkedin.png" alt=""></a>
+                  </div>
+                  <a class="botao-contato" href="#">Contato</a>
+               </div>
+            </section>
+   
+            <div class="copy-container">
+               <p class="copy">&copy; 2022 Copyright - Programadora Maysa</p>
+            </div>
+   
+         </footer>
+    </body>
+    <script src="../js/mobileMenu.js"></script>
+    <script src="../js/escolher-login.js"></script>
+    <script src="../js/login-usuario.js"></script>
+</html>

@@ -1,0 +1,144 @@
+.rodape{
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   background-color: rgb(53, 53, 53);
+}
+
+.logo-rodape{
+   align-self: flex-start;
+}
+
+.logo{
+   width: 40%;
+   margin-top: -1.5rem;
+}
+
+.conteudo-rodape{
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   margin: 3rem 0;
+}
+
+.conteudo-rodape > div{
+   width: 20%;
+}
+
+.conteudo-rodape h3{
+   font-size: 1.1rem;
+   font-weight: bold;
+   margin-bottom: 0.5rem;
+   color: #d3d3d3;
+}
+
+.inicio a, .sobre-nos a{
+   text-decoration: none;
+   color: #d3d3d3;
+   font-size: 1rem;
+   margin-bottom: 0.5rem;
+}
+
+.inicio li, .sobre-nos li{
+   margin-bottom: 0.2rem;
+}
+
+.redes-sociais{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.redes-sociais div{
+   display: flex;
+   width: 188px;
+}
+
+.redes-sociais div > a{
+   padding: 0 5px;
+}
+
+.redes-sociais img{
+   width: 100%;
+}
+
+.conteudo-rodape > div ul a:hover{
+   color: #470505;;
+}
+
+.botao-contato{
+   margin-top: 1rem;
+   text-decoration: none;
+   color: white;
+   background-color: #470505;
+   padding: 0.5rem 2rem;
+   border-radius: 2rem;
+}
+
+.botao-contato:hover{
+   background-color:#470505
+}
+
+.copy-container{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: rgb(37, 37, 37);
+}
+
+.copy{
+   box-sizing: border-box;
+   margin: auto;
+   color: #d3d3d3;
+   padding: 1rem;
+}
+
+@media screen and (max-width: 999px){
+
+   .conteudo-rodape{
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .conteudo-rodape > div{
+      width: 100%;
+      
+   }
+
+   .logo-rodape{
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+   }
+
+   .logo-rodape > .logo{
+      padding: 0px;
+      margin: 1rem 0;
+   }
+
+   .inicio , .sobre-nos {
+      width: 100%;
+      border-bottom: 1px solid #d3d3d3; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem 0;
+      padding-bottom: 1rem;
+   }
+
+   .inicio ul, .sobre-nos ul, .redes-sociais div{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+   }
+
+   ul > li{
+      margin-right: 0.7rem;
+   }
+
+   .redes-sociais > div{
+      width: 60%;
+   }
+}

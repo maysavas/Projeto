@@ -1,0 +1,14 @@
+CORES DO SITE:
+
+VERMELHOS:                   PRETO:
+#812020                      #000000
+#571616 
+#470505                   
+#b43535
+#bd3a3a
+
+CINZAS:
+#818181
+#bebebe
+#9b9b9b
+#d3d3d3

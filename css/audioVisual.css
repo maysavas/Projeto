@@ -1,0 +1,157 @@
+.main-page {
+   box-sizing: border-box;
+   padding: 0 1rem 1rem 1rem;
+}
+
+.main-page > h1{
+   font-size: 2rem;
+   font-weight: bold;
+   margin: 2rem 0;
+   padding: 0.2rem 0;
+   border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.filtro-container{
+   margin: 1rem 0 1.5rem 0;
+}
+
+.filtro{
+   margin-top: 0.2rem;
+   font-size: 1.1rem;
+   padding: 0.2rem;
+}
+
+.display-none{
+   display: none;
+   transition: 0.3s;
+}
+
+.invisivel-conteudo{
+   opacity: 0;
+}
+
+.lista{ 
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.conteudo{
+   border-radius: 0.7rem;
+   padding: 0.7rem;
+   padding-bottom: 1.3rem;
+   background-color: #812020;
+   margin-bottom: 3rem;
+   margin: 0rem 0.5rem 3rem 0.5rem;
+}
+
+.titulo{
+   font-weight: bolder;
+   font-size: 15px;
+   margin-top: 10px;
+   max-width: 160px;
+}
+.titulo{
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden;
+}
+abbr[title]{
+   text-decoration: none;
+}
+
+.qnt{
+   margin-top: 8px;
+   font-style: oblique;
+}
+.conteudo{
+   transition: 0.2s;
+   position: relative;
+   box-sizing: border-box;
+}
+
+.conteudo  img{
+   border-radius: 0.5rem;
+   cursor: pointer;
+   width: 160px;
+   height: 240px;
+}
+
+.conteudo:hover{
+   background-color: rgba(100, 100, 100, 0.973);
+   transform: scale(1.01);
+   color: #000000;
+}
+
+.sinopse{
+   font-size: 14px;
+   height: 8rem;
+   overflow: hidden;
+   overflow-y: scroll;
+}
+
+.box-conteudo{
+   padding: 1.5rem;
+   box-sizing: border-box;
+   border-radius: 5px;
+   display: none;
+   width: 300px;
+   position: absolute;
+   top: 0;
+   right: -300px;
+   flex-direction: column;
+   align-items: center;
+   background-color: rgba(100, 100, 100, 0.973);
+   box-shadow: 0 0 100vw 100vw rgba(0, 0, 0, 0.233);
+   z-index: 1;
+}
+
+
+.box-conteudo h3{
+   margin: 1.2rem 0;
+}
+
+.x-botao{
+   position: absolute;
+   border: none;
+   border-bottom-left-radius: 3px;
+   border-bottom-right-radius: 3px;
+   box-decoration-break: none;
+   background-color: white;
+   font-size: 1.5rem;
+   font-weight: bold;
+   cursor: pointer;
+   color: rgb(66, 66, 66);
+   top: 0;
+   right: 0.3rem;
+}
+
+.x-botao:hover{
+   color: rgb(206, 54, 54);
+}
+
+.flex-visivel{
+   display: flex;
+}
+
+.z-index{
+   z-index: 3;
+}
+
+.star-bcg{
+   background-color: #812020;
+   transform: scale(1.01);
+   color: #000000;
+   z-index: 3;
+}
+
+@media screen and (max-width: 999px){
+
+   .box-conteudo{
+      max-width: 200px;
+      position: fixed;
+      top: 30%;
+      left: 0;
+   }
+}
